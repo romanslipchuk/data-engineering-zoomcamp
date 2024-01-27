@@ -27,3 +27,10 @@ resource "google_storage_bucket" "demo_da_course" {
     }
   }
 }
+
+resource "google_bigquery_dataset" "data_talks_demo_dataset" {
+  dataset_id    = "demo_dataset"
+  friendly_name = "test"
+  description   = "This is a test description"
+  location      = "EU"
+}
