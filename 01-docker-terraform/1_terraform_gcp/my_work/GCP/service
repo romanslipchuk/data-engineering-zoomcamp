@@ -1,0 +1,77 @@
+Generate ssh key
+
+cd /home
+ cd .ssh
+
+ Generate keygen
+ ssh-keygen -t rsa -f gcp -C romasl -b 2048
+
+paste public part to Media - SSH keys in google
+
+Create a virtual instance with closet location? and normal characteristics (Ubuntu 20.04LTS 30Gb Disc etc...)
+
+Equivalent - is how to create via Command line
+
+
+Connect to GCP via ssh:
+ ssh -i ~/.ssh/gcp romasl@35.228.167.8(IP providie in)
+
+Install Anaconda on VM 
+wget from Anaconda Download page
+chmod +x .sh file
+RUN it
+
+install docker on VM
+sudo apt-get update
+sudo apt-get install docker.io
+
+Install Remote ssh on VSCode if not installed
+
+connect in low left corner to dezoom provide password
+
+clone repo from github to VM from remoteSSH
+
+add docker to sudo users
+sudo groupadd docker
+
+add user to docker users
+
+sudo gpasswd -a $USER docker
+
+sudo service docker restart to restart docker service
+
+Download docker-compose from git
+
+wget to new /bin directory in home path
+
+chmod +x for docker-compose file
+
+add line to .bashrc file
+
+export PATH="${HOME}/bin:$PATH" 
+to start docker-compose from any directory om VM
+
+start docker-compose from directory where is docker-compose.yaml file is located
+
+pip install pgcli
+
+pgcli -h localhost -U root -d ny_taxi
+
+password is root
+
+forward ports from VSCode just press on terminal tab ports tab and connect from local terminal to VM instance
+
+try to connect new ports and run pgadmin locally
+just add port 8080
+
+open jupyter notebook on GCP
+
+try to run Upload_data ipynb file in GCP
+
+download and install all libs
+
+download and unzip terraform
+
+
+
+

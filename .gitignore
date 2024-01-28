@@ -5,7 +5,7 @@
 *.tfstate.*
 **.terraform
 **.terraform.lock.*
-**google_credentials.json
+*.json
 **logs/
 **.env
 **__pycache__/
@@ -14,3 +14,6 @@
 serving_dir
 .ipynb_checkpoints/
 !week_6_stream_processing/avro_example/data/rides.csv
+*.csv
+*.gz
+/home/romasl/Documents/LEARN/DE/data-engineering-zoomcamp/01-docker-terraform/1_terraform_gcp/my_work/delearnproject20240121-dfb8fb0d184b.json
